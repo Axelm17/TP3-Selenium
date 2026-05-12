@@ -16,7 +16,7 @@ def creer_driver():
     options = Options()
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
-    # Désactiver le popup "mot de passe compromis" parce que cet enfoiré faisait tout foirer
+    # Désactiver le popup "mot de passe compromis"
     options.add_argument("--disable-features=PasswordLeakDetection")
     options.add_experimental_option("prefs", {
         "credentials_enable_service": False,
